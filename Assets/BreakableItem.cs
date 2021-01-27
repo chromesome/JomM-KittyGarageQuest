@@ -5,7 +5,6 @@ using UnityEngine;
 public class BreakableItem : MonoBehaviour
 {
     Rigidbody2D rb;
-    BoxCollider2D bc;
 
     public float jumpForce;
 
@@ -13,7 +12,6 @@ public class BreakableItem : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        bc = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame

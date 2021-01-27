@@ -75,7 +75,7 @@ public class CatController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-                 if (collision.CompareTag("Breakable"))
+        if (collision.CompareTag("Breakable"))
         {
             BreakableItem breakableItem = collision.GetComponent<BreakableItem>();
 
@@ -84,10 +84,5 @@ public class CatController : MonoBehaviour
                 breakableItem.BreakIt();
             }
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
     }
 }
